@@ -1,0 +1,27 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { {{pascalCase name}} } from "..";
+
+/*
+  # DOCS:
+    * More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+    * More on args: https://storybook.js.org/docs/react/writing-stories/args
+    * More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+    * More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+
+*/
+
+
+export default {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}},
+  argTypes: {},
+} as ComponentMeta<typeof {{pascalCase name}}>
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => <{{pascalCase name}} {...args} />;
+
+export const Primary = Template.bind({})
+Primary.args = {}
+
+export const Secondary = Template.bind({})
+Secondary.args = {}
+

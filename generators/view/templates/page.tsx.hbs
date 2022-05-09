@@ -1,0 +1,16 @@
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import {{pascalCase name}}View from '@/views/{{dashCase name}}'
+
+const {{pascalCase name}}: NextPage = () => {
+  return (
+    <>
+      <Head>
+        <title>{{titleCase name}}</title>
+      </Head>
+      <{{pascalCase name}}View />
+    </>
+  )
+}
+export default {{pascalCase name}}
+
